@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 const intent_list = new Discord.Intents(["GUILD_MEMBERS", "GUILD_MESSAGES", "GUILDS", "GUILD_INVITES", "GUILD_MESSAGE_REACTIONS"])
 const client = new Discord.Client({ ws: { intents: intent_list } })
-const token = 'NzkyOTM4MjY1NTIyODY0MTM4.X-k_Tg.r0bUETpEmQOY1SUsVrtgwcXv4ms'
+const token = process.env.token
 const prefix = ','
 const PREFIX = ','
 const { inspect } = require("util");
